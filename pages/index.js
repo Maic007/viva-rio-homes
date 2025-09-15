@@ -158,7 +158,7 @@ export default function Home({ propiedadesCMS }) {
       titulo: 'Copacabana Dreams',
       descripcion: 'Vista al mar y acceso directo a la playa',
       precio: 'R$ 1.200.000',
-      imagen: (p.images && Array.isArray(p.images) && p.images.length > 0) ? p.images[0].asset : null,
+      imagen: '/prop1.jpg',
       color: 'green',
       slug: 'copacabana-dreams'
     },

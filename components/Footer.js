@@ -140,7 +140,7 @@ export default function Footer() {
           <h2 className="text-lg font-semibold">Viva Rio Homes</h2>
           <p className="text-sm">{t.descripcion}</p>
           <p className="text-xs text-white">
-            © {new Date().getFullYear()} Viva Rio Homes. {t. derechos}
+            © {new Date().getFullYear()} Viva Rio Homes. {t.derechos}
             {t.derechos || t.droits || t.rights || t.rechte || t.diritti || t.حقوق}
           </p>
         </div>
