@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Mail, Instagram, MessageCircle, Info, Shield, Phone } from "lucide-react";
 import React from 'react';
 import { useRouter } from "next/router";
@@ -146,15 +147,15 @@ export default function Footer() {
 
         {/* Columna derecha con links e íconos */}
         <div className="flex flex-col space-y-3 md:items-end">
-          <a href="/sobre" className="flex items-center gap-2 hover:underline">
+          <Link href="/sobre" className="flex items-center gap-2 hover:underline">
             <Info className="w-4 h-4 text-white" /> {t?.links?.sobre || "Sobre"}
-          </a>
-          <a href="/contato" className="flex items-center gap-2 hover:underline">
+          </Link>
+          <Link href="/contato" className="flex items-center gap-2 hover:underline">
             <Phone className="w-4 h-4 text-blue-400" /> {t?.links?.contato || "Contato"}
-          </a>
-          <a href="/privacidade" className="flex items-center gap-2 hover:underline">
+          </Link>
+          <Link href="/privacidade" className="flex items-center gap-2 hover:underline">
             <Shield className="w-4 h-4 text-orange-500" /> {t?.links?.privacidad || "Privacidade"}
-          </a>
+          </Link>
           <a
             href="mailto:marcobrasil777@gmail.com"
             className="flex items-center gap-2 hover:underline"
