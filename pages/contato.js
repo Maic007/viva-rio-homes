@@ -1,6 +1,6 @@
 // pages/contato.js
 import Head from 'next/head';
-import ContactoForm from '../pages/ContactoForm';
+import ContatoForm from '../components/ContatoForm';
 
 export default function ContatoPage() {
   return (
@@ -13,7 +13,7 @@ export default function ContatoPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white text-center mb-6">
             Fale conosco
           </h1>
-          <ContactoForm />
+          <ContatoForm />
         </div>
       </div>
     </>
