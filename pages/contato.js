@@ -1,6 +1,6 @@
 // pages/contato.js
 import Head from 'next/head';
-import ContactoForm from '../ContactoForm';
+import ContactoForm from '../pages/ContactoForm';
 
 export default function ContatoPage() {
   return (
