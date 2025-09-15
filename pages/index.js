@@ -147,7 +147,7 @@ export default function Home({ propiedadesCMS }) {
     titulo: p.title?.[language] || p.title?.pt,
     descripcion: p.description?.[language] || p.description?.pt,
     precio: p.priceTable?.[0]?.preco || '',
-    imagen: p.images?.[0]?.asset || null,
+    imagen: (p.images && Array.isArray(p.images) && p.images.length > 0) ? p.images[0].asset : null,
     color: 'blue',
     slug: p.slug.current,
   }));
