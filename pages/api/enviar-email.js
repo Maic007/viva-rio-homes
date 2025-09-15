@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
 
-  const { nombre, email, mensaje } = req.body;
+  const { nome, email, mensajem } = req.body;
 
   try {
     const data = await resend.emails.send({
@@ -15,10 +15,10 @@ export default async function handler(req, res) {
       to: [process.env.EMAIL_TO],
       subject: 'Nuevo contacto desde la página web',
       html: `
-        <strong>Nombre:</strong> ${nombre}<br />
+        <strong>Nombre:</strong> ${nome}<br />
         <strong>Email:</strong> ${email}<br />
         <strong>Mensaje:</strong><br />
-        <p>${mensaje}</p>
+        <p>${mensajem}</p>
       `,
     });
 
